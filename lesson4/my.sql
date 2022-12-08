@@ -15,14 +15,14 @@ CREATE TABLE journal (
 );
 
 -- insert
-INSERT INTO journal VALUES (0001, 'Clark', '20', 'Moscow');
-INSERT INTO journal VALUES (0002, 'Dave', '19', 'Murmansk');
-INSERT INTO journal VALUES (0003, 'Ava', '22', 'Nakhodka');
-INSERT INTO journal VALUES (0004, 'Harry', '35', 'Kazan');
-INSERT INTO journal VALUES (0005, 'Jacob', '32', 'Moscow');
-INSERT INTO journal VALUES (0006, 'Amelia', '25', 'Oryol');
-INSERT INTO journal VALUES (0007, 'Sophie', '28', 'Moscow');
-INSERT INTO journal VALUES (0008, 'Katie', '31', 'Moscow');
+INSERT INTO journal VALUES (0001, 'Clark', 20, 'Moscow');
+INSERT INTO journal VALUES (0002, 'Dave', 19, 'Murmansk');
+INSERT INTO journal VALUES (0003, 'Ava', 22, 'Nakhodka');
+INSERT INTO journal VALUES (0004, 'Harry', 35, 'Kazan');
+INSERT INTO journal VALUES (0005, 'Jacob', 32, 'Moscow');
+INSERT INTO journal VALUES (0006, 'Amelia', 25, 'Oryol');
+INSERT INTO journal VALUES (0007, 'Sophie', 28, 'Moscow');
+INSERT INTO journal VALUES (0008, 'Katie', 31, 'Moscow');
 
 -- fetch 
-SELECT name FROM journal WHERE address = 'Moscow' and age>=18 and age<30 ;
+SELECT name FROM journal WHERE address='Moscow' AND age>=18 and age<30;
